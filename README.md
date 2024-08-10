@@ -9,7 +9,9 @@ This project features an "AI Data Analyst" designed specifically for a store's s
 Prediction Capabilities: The chatbot can make predictions about future sales using a time series forecasting model developed in a separate project.
 Interactive Web Interface: The project includes a user-friendly website built with Flask, HTML, CSS, and JavaScript, providing an accessible interface for interacting with the AI Data Analyst.
 Technologies Used
+
 • **Python**: Utilized for natural language processing (NLP) to create the chatbot and for developing the time series forecasting model.
+
 • **Flask**: Used as the web framework for building the server-side application.
 HTML/CSS/JavaScript: Employed for designing and developing the client-side interface of the website.
 
