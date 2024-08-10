@@ -1,0 +1,41 @@
+,Order Date,Ship Date,Segment,Country,City,Profit
+270,2014-12-29,2015-01-03,Corporate,United States,San Francisco,210.4935999999999
+570,2014-12-29,2015-01-05,Consumer,United States,New York City,34.775999999999996
+571,2014-12-29,2015-01-05,Consumer,United States,New York City,6.4216
+572,2014-12-29,2015-01-05,Consumer,United States,New York City,11.2266
+573,2014-12-29,2015-01-05,Consumer,United States,New York City,4.0095
+645,2014-12-31,2015-01-06,Home Office,United States,Columbus,56.510999999999996
+906,2014-12-31,2015-01-04,Consumer,United States,New York City,12.117599999999968
+907,2014-12-31,2015-01-04,Consumer,United States,New York City,2.7278999999999964
+908,2014-12-31,2015-01-04,Consumer,United States,New York City,19.791
+953,2014-12-29,2015-01-02,Consumer,United States,Round Rock,2.7168
+954,2014-12-29,2015-01-02,Consumer,United States,Round Rock,-11.595999999999997
+1296,2014-12-31,2015-01-04,Corporate,United States,Fairfield,4.5188
+1297,2014-12-31,2015-01-04,Corporate,United States,Fairfield,6.474999999999998
+1877,2014-12-30,2015-01-03,Consumer,United States,Los Angeles,-44.276400000000024
+1878,2014-12-30,2015-01-03,Consumer,United States,Los Angeles,22.678200000000018
+2431,2014-12-29,2015-01-03,Corporate,United States,Seattle,3.0340000000000007
+2569,2014-12-28,2014-12-28,Corporate,United States,Newark,-35.6174
+2570,2014-12-28,2014-12-28,Corporate,United States,Newark,3.6431999999999998
+2874,2014-12-30,2015-01-01,Consumer,United States,New York City,2.9547
+4239,2014-12-30,2015-01-05,Corporate,United States,Grand Rapids,100.65599999999999
+4287,2014-12-29,2015-01-04,Home Office,United States,Nashville,-12.956800000000005
+5091,2014-12-31,2015-01-04,Consumer,United States,Loveland,-0.6048
+5131,2014-12-30,2015-01-06,Corporate,United States,Anaheim,37.4144
+5456,2014-12-30,2015-01-03,Consumer,United States,Edmonds,9.604
+5457,2014-12-30,2015-01-03,Consumer,United States,Edmonds,20.537999999999997
+6089,2014-12-29,2015-01-01,Corporate,United States,Loveland,-0.9899999999999998
+6149,2014-12-29,2015-01-01,Corporate,United States,Long Beach,-34.07040000000001
+6818,2014-12-29,2015-01-02,Corporate,United States,Peoria,-2.6880000000000015
+6819,2014-12-29,2015-01-02,Corporate,United States,Peoria,-2.3903999999999996
+6820,2014-12-29,2015-01-02,Corporate,United States,Peoria,-3.2391999999999896
+6821,2014-12-29,2015-01-02,Corporate,United States,Peoria,-1.4059999999999997
+7484,2014-12-29,2015-01-03,Home Office,United States,Fargo,0.8679999999999999
+7485,2014-12-29,2015-01-03,Home Office,United States,Fargo,12.690999999999999
+7632,2014-12-30,2015-01-02,Consumer,United States,Louisville,314.0384
+7633,2014-12-30,2015-01-02,Consumer,United States,Louisville,5.889099999999999
+7634,2014-12-30,2015-01-02,Consumer,United States,Louisville,10.028199999999998
+7635,2014-12-30,2015-01-02,Consumer,United States,Louisville,87.28419999999997
+7636,2014-12-30,2015-01-02,Consumer,United States,Louisville,77.62499999999997
+8097,2014-12-29,2015-01-02,Consumer,United States,Albuquerque,34.2925
+8098,2014-12-29,2015-01-02,Consumer,United States,Albuquerque,1.9259999999999997

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+    <title> {{ page_title }}</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {% if time_series %}
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/'+ time_series +'.css') }}" />
+
+    {% endif %}
+    
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="/">
+            <div class="nav-logo">
+                <div class="logo">
+                    <img style="width:80px;height:50px;" src="{{ url_for('static',filename='images/website-logo-removebg-preview.png') }}" alt="Amine-El-Hablani" >
+                </div> 
+                <div class="website-title">
+                    <p>Amine El Hablani </p> 
+                </div>
+            </div> 
+        </a>
+        <div class="nav-menu">
+            <a href="timeseries-page"> 
+            <div class="menu-item">
+                <div>
+                    <img style="width:50;height:40px;" src="{{ url_for('static',filename='images/data-analysis-logo2-removebg-preview.png') }}" alt="Time-Series-forecasting" >
+                </div>
+                <div>
+                    <p>Time series forecasting</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    {% block body %}
+    {% endblock %}
+
+</body>
+<script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
+{% if time_series %}
+<script src="{{ url_for('static',filename='js/'+ time_series +'.js') }}"></script>
+{% endif %}
+
+
+<footer>
+    <div class="footer">
+        <div class="cantacts-list">
+            <a href="https://www.linkedin.com/in/amine-el-hablani-178713224/" target="_blank">
+                <div class="contact">
+                    <div class="icon">
+                        <img src="{{url_for('static',filename= 'images/linkedin-icon.png')}}" alt="img"/>
+                    </div>
+                    <div class="Label">
+                        <p>Linkedin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/AmineElHablani" target="_blank">
+                <div class="contact">
+                    <div class="icon">
+                        <img src="{{url_for('static',filename= 'images/github-icon.png')}}" alt="img" />
+                    </div>
+                    <div class="Label">
+                        <p>Github</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100078406240766" target="_blank">
+                <div class="contact">
+                    <div class="icon">
+                        <img src="{{url_for('static',filename= 'images/facebook-icon.png')}}" alt="img" />
+                    </div>
+                    <div class="Label">
+                        <p>FaceBook</p>
+                    </div>
+                </div>
+            </a>
+            <a href="mailto:aminehableni1898@gmail.com" target="_blank">
+                <div class="contact">
+                    <div class="icon">
+                        <img src="{{url_for('static',filename= 'images/gmail-icon.png')}}" alt="img" />
+                    </div>
+                    <div class="Label">
+                        <p>Email</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="owner">
+            <div class="icon">
+                <img src="{{url_for('static',filename= 'images/copyright-icon.png')}}" alt="img" />
+            </div>
+            <div class="Label">
+                <p> Amine El Hablani, Data Science Engineering Student </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

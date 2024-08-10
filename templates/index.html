@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class = "chatbot-interface">
+    <div class="chatbot-heading">
+        <div class="chatbot-logo">
+            <img style="width:40px;height:40px;" src="{{ url_for('static',filename='images/chatbot_image2.png') }}" alt="Amine-El-Hablani" >
+        </div>
+        <div class="chatbot-title">
+            <p> Chatbot <p>
+        </div>
+    </div>
+    <div class="chatbot-body" id="chatbotBody">
+    <!-- <div class="bot-message">
+        </div>
+        <div class="user-message">
+        </div>
+    -->
+    </div>
+    <div class="chatbot-input">
+        <input type="text" placeholder="write a message" id="userMessage" >
+    </div>
+</div>
+
+
+
+{% endblock %}

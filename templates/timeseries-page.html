@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div class="page-content">
+    <div class="menu">
+        <div class="menu-button" id="button-data" title="View the Data">
+            <div class="logo"> 
+                <img src="{{ url_for('static',filename='images/data-logo.png') }}" alt="data-icon">
+            </div>
+            <div class="label">
+            </div>
+        </div>
+        <div class="menu-button" id="button-notebook" title="View the notebook">
+            <div class="logo"> 
+                <img src="{{ url_for('static',filename='images/notebook-logo.png') }}" alt="notebook-icon">
+            </div>    
+            <div class="label">
+            </div>  
+        </div>
+        <div class="menu-button" id="button-forecast" title="make forecasts">
+            <div class="logo"> 
+                <img src="{{ url_for('static',filename='images/forecast-logo.png') }}" alt="forecasting-icon">
+            </div>    
+            <div class="label">
+            </div>    
+        </div>
+    </div>
+    <div class="content-data" id="content-data">
+        <div class="data">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr id="table-header">
+                  </tr>
+                </thead>
+                <tbody id="data-body">
+
+                </tbody>
+              </table>  
+
+        </div>
+        <div class="data-settings">
+            <div class="download">
+                <!-- <a id="download-data" href="{{ url_for('static',filename='data/static/custom_data.xlsx') }}" download="custom_data.xlsx" > Download </a> 
+            -->
+            <form method="GET" action="download-data"  target="_blank">
+                <input id="download-data" type="submit" value="Download" >
+            </form>
+        
+            </div>
+
+            <div class="date-range">
+                <div class="date-input">
+                    <div class="label">
+                        <p>Start date: </p>
+                    </div>
+                    <input type="date" name="date-min" id="startdate"  min="2011-01-04"   max="2015-01-01" required >
+                </div>
+                <div class="date-input">
+                    <div class="label">
+                        <p>End date: </p>
+                    </div>                    
+                    <input type="date" name="date-min" id="enddate"  min="2011-01-04"   max="2015-01-01" required >
+                </div>
+            </div>
+            <div class="columns">
+                <div class="label">
+                    <p>Columns </p>
+                </div>
+                <div class="columns-options">
+                    <div class="option">
+                        <div class="label-column"> <p>Row ID</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Row ID" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Order ID</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Order ID" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Order Date</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Order Date" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Ship Date</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Ship Date" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Ship Mode</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Ship Mode" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Customer ID</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Customer ID" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Customer Name</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Customer Name" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Segment</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Segment" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Country</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Country" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>City</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="City" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>State</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="State" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Postal Code</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Postal Code" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Region</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Region" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Product ID</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Product ID" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Category</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Category" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Sub-Category</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Sub-Category" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Product Name</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Product Name" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Sales</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Sales" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Quantity</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Quantity" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Discount</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Discount" checked>
+                    </div>
+                    <div class="option">
+                        <div class="label-column"> <p>Profit</p> </div>
+                        <input class="columnCheckbox" type="checkbox" name="column" value="Profit" checked>
+                    </div>
+                </div>
+            </div> 
+            <div class="buttons">
+                <input type="submit" id="filter-data" value="Filter">
+                <input type="reset" value="Uncheck All" id="reset-columns">
+            </div>
+        </div>
+    </div>
+    <div class="content-notebook" id="content-notebook">
+        <div class="content-title">
+            <p>Monthly Sales forecating Notebook </p>
+        </div>
+        <div class="notebook">
+            <iframe src="{{ url_for('static', filename='monthly Sales forecasting.html') }}" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div class="content-forecast" id="content-forecast">
+        <div class="forecast-graph" id="forecast-graph">
+        </div>
+        <div class="forecast-details">
+            <div class="download">
+                    <!-- <a id="download-data" href="{{ url_for('static',filename='data/static/custom_data.xlsx') }}" download="custom_data.xlsx" > Download </a> 
+                -->
+                <form method="GET" action="download_forecasts"  target="_blank">
+                    <input type="hidden" id="image-name" name="image_name" value="">
+                    <input id="download-forecast" type="submit" value="Download" >
+                </form>
+            </div>
+            <div class="date-input">
+                <div class="label">
+                    <p>Date: </p>
+                </div>                    
+                <input type="date" name="date-forecast" id="dateforecast" min="2015-01-01" required >
+            </div>
+
+            <div class="forecasts-table">
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr id="forecast-header">
+                      </tr>
+                    </thead>
+                    <tbody id="forecast-body">
+    
+                    </tbody>
+                  </table>  
+    
+            </div>
+            <div class="buttons">
+                <input type="submit" id="submit-forecast" value="Predict">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
