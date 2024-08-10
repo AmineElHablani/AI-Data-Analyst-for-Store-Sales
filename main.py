@@ -30,7 +30,7 @@ ps=PorterStemmer()
 #load model 
 svm = joblib.load("Model/svm_chatbot_best.joblib")
 
-neuralprophet_model = joblib.load("Model/neural_profet.joblib")
+neuralprophet_model = joblib.load("Model/neuralprophet.joblib")
 #load neuralphrephet_data
 data_train_prophet = pd.read_csv("static/data/data_train_neuralProphet.csv").drop("Unnamed: 0",axis=1)
 
