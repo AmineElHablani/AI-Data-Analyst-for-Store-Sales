@@ -17,7 +17,7 @@ Technologies Used
 - **HTML/CSS/JavaScript**: Employed for designing and developing the client-side interface of the website.
 
 ## Inspiration
-Inspired by "Devin AI," the first AI software engineer, this project aims to offer business owners a personalized AI data analyst to simplify data analysis and provide quick, actionable insights.
+Inspired by "Devin AI" the first AI software engineer, this project aims to offer business owners a personalized AI data analyst to simplify data analysis and provide quick, actionable insights.
 
 ## Future Plans
 - Enhance the chatbot to generate advanced data visualizations.
