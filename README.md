@@ -20,7 +20,7 @@ Technologies Used
 Inspired by "Devin AI," the first AI software engineer, this project aims to offer business owners a personalized AI data analyst to simplify data analysis and provide quick, actionable insights.
 
 ## Future Plans
-Enhance the chatbot to generate advanced data visualizations.
-Implement automatic data generation and real-time insights from store data.
-Repositories
+- Enhance the chatbot to generate advanced data visualizations.
+- Implement automatic data generation and real-time insights from store data.
+## Repositories
 Time Series Forecasting Model: https://github.com/AmineElHablani/Time-Series-Sales-Prediction
